@@ -1,0 +1,4 @@
+```{r ,results='asis'}
+rep(print("hello"),2)
+```
+
