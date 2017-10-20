@@ -39,8 +39,7 @@
 
   
 
-  <link rel="alternate" href="" type="application/rss+xml" title="Nikolaos Korfiatis">
-  <link rel="feed" href="" type="application/rss+xml" title="Nikolaos Korfiatis">
+  
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
@@ -59,6 +58,7 @@
 
     
     <div class="navbar-header">
+      
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target=".navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -66,6 +66,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
       <a class="navbar-brand" href="/">Nikolaos Korfiatis</a>
     </div>
 
@@ -91,7 +92,7 @@
         
 
         <li class="nav-item">
-          <a href="/#workingpapers">
+          <a href="/workingpapers">
             
             <span>Working Papers</span>
           </a>
@@ -103,7 +104,7 @@
         
 
         <li class="nav-item">
-          <a href="/publication">
+          <a href="/publicationlists/list">
             
             <span>Publications</span>
           </a>
@@ -184,7 +185,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text"></p>
+  <p class="pub-abstract" itemprop="text">We present a mobile visual clothing search system whereby a smart phone user can either choose a social networking photo or take a new photo of a person wearing clothing of interest and search for similar clothing in a retail database. From the query image, the person is detected, clothing is segmented, and clothing features are extracted and quantized. The information is sent from the phone client to a server, where the feature vector of the query image is used to retrieve similar clothing products from online databases. The phone&rsquo;s GPS location is used to re-rank results by retail store location. State of the art work focuses primarily on the recognition of a diverse range of clothing offline and pays little attention to practical applications. Evaluated on a challenging dataset, the system is relatively fast and achieves promising results.</p>
 
   
   <div class="row">
@@ -195,7 +196,7 @@
         <div class="col-xs-12 col-sm-9">
           
           <a href="/publication/#1">
-            Journal
+            Conference proceedings
           </a>
           
         </div>
@@ -243,28 +244,31 @@
 
 
 
+<a class="btn btn-primary btn-outline" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
 
-<a class="btn btn-primary btn-outline" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf">
+
+<a class="btn btn-primary btn-outline" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="/">
-  Slides
-</a>
 
 
-<a class="btn btn-primary btn-outline" href="/">
-  Video
-</a>
+
+<button type="button" class="btn btn-primary btn-outline js-cite-modal"
+        data-filename="/files/citations/clothing-search.bib">
+  Cite
+</button>
 
 
-<a class="btn btn-primary btn-outline" href="/">
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
   Code
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="/">
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
   Dataset
 </a>
 
@@ -274,7 +278,27 @@
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="http://www.example.org">
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="/" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="http://www.example.org" target="_blank" rel="noopener">
   Custom Link
 </a>
 
@@ -300,9 +324,6 @@
     
 
     
-    <li class="next"><a href="/publication/person-re-identification/">A Person Re-Identification System For Mobile Devices <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
   </ul>
 </nav>
 
@@ -314,8 +335,9 @@
 
       &copy; 2017 &middot; 
 
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
       <span class="pull-right" aria-hidden="true">
         <a href="#" id="back_to_top">
@@ -329,12 +351,45 @@
   </div>
 </footer>
 
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     
+
+    
+    
+
+    
+    <script async defer src="//maps.googleapis.com/maps/api/js"></script>
+    
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
     
     <script src="/js/hugo-academic.js"></script>
     
