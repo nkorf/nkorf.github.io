@@ -14,6 +14,15 @@
     
     <url>
     
+      <loc>/publicationlists/publications-edited/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publicationlists/publications-journals/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
@@ -33,6 +42,33 @@
     <url>
     
       <loc>/publicationlists/list/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/teaching/teaching/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publicationlists/publications-theses/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publicationlists/publications-wp/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -194,6 +230,32 @@
     
     <url>
     
+      <loc>/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/supervision/research-topics/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/supervision/supervision/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication_types/1/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -245,16 +307,6 @@
     
       <loc>/tags/jekyll/</loc>
       <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
