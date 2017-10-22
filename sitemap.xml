@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/publicationlists/publications-theses/</loc>
+      <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/supervision/supervision/</loc>
+      <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publicationlists/publications-conferences/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
@@ -50,7 +68,7 @@
     
     <url>
     
-      <loc>/teaching/teaching/</loc>
+      <loc>/supervision/research-topics/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,7 +77,7 @@
     
     <url>
     
-      <loc>/publicationlists/publications-theses/</loc>
+      <loc>/teaching/teaching/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -233,22 +251,6 @@
       <loc>/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/supervision/research-topics/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/supervision/supervision/</loc>
     </url>
     
   
