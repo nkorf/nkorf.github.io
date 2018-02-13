@@ -251,13 +251,13 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <div id="rvest-vs-rselenium" class="section level2">
+      <section id="rvest-vs-rselenium" class="level2">
 <h2>Rvest vs Rselenium</h2>
 <p>Its very often the case that data crawling needs to accomodate cookie requests from the website and/or by pass login authorizations. While rvest is a great tool to process html text, accomodating cookies and login requests can be quite troublesome.</p>
 <p>The main problem comes with the internals of <code>read_html()</code> function which builds on <code>curl</code> type of requests. This connection is often stateless and may result to 301 http errors.</p>
 <p>An easy way to overcome this, is to rely on the browser in order to capture the <code>html</code> part that we wish to parse. Therefore using <code>rselenium</code> is the most efficient way to address that, although it requires some effort to run.</p>
-</div>
-<div id="prerequisites" class="section level2">
+</section>
+<section id="prerequisites" class="level2">
 <h2>Prerequisites</h2>
 <p>To begin with you need a standalone version of a selenium server (you can download the latest version of selenium server from <a href="https://goo.gl/21wWg8">here</a></p>
 <p>The second most important step is to download a browser extension to use with the selenium server. I strongly suggest chrome since this is the fastest and more convinient one. You can download the chrome webdriver extension for your platform from <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.33/">here.</a></p>
@@ -268,8 +268,8 @@
 # same folder with the selenium server. The version of the selenium 
 # server might change as well. 
 java -Dwebdriver.chrome.driver=chromedriver_win32\chromedriver.exe -jar selenium-server-standalone-3.5.3.jar -port 4445</code></pre>
-</div>
-<div id="using-rselenium" class="section level2">
+</section>
+<section id="using-rselenium" class="level2">
 <h2>Using Rselenium</h2>
 <pre class="r"><code>#install the package if you don&#39;t allready have it
 #install.packages(&quot;Rselenium&quot;)
@@ -303,7 +303,7 @@ page_scr &lt;- read_html(this_page_src)
 
 page_src %&gt;% 
    html_text()</code></pre>
-</div>
+</section>
 
     </div>
 
@@ -327,7 +327,7 @@ page_src %&gt;%
   <div class="container">
     <p class="powered-by">
 
-      Last update: Sun 28 Jan 2018 15:07:53 GMT <br> &middot; 
+      Last update: Tue 13 Feb 2018 21:06:31 GMT <br> &middot; 
 
       Coded in Rmarkdown with Hugo
 
