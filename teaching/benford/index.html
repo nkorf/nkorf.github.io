@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -18,6 +16,11 @@
   
     
   
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
@@ -54,11 +57,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="/teaching/">
+  <link rel="canonical" href="/teaching/benford/">
 
   
 
-  <title>Teaching and Lecture Notes | </title>
+  <title>Benford&#39;s Law | </title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -203,58 +206,76 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
 
 
+  <div class="article-container">
+    <h1 itemprop="name">Benford&#39;s Law</h1>
+    
 
-<div class="universal-wrapper">
+<div class="article-metadata">
 
-  <h1>Teaching and Lecture Notes</h1>
+  <span class="article-date">
+    
+    <time datetime="2017-10-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      2017-10-01
+    </time>
+  </span>
 
+  
+
+  
   
 
   
   
-  <div>
-    <h2><a href="/teaching/teaching/">Teaching</a></h2>
-    <div class="article-style">
-      
-      Please see my office hours for appointments concerning assignments and clarifications.
- Current  Applied Statistics - Introduction to R and Regression Analysis. School of Computing Sciences, UEA (With Christopher Greeman)  Information Systems for Management - Norwich Business School (Second year Undergraduate Program - With Pat Barrow). Innovation and Technology Management - Norwich Business School (MSc in Operations Management / Elective course for all Programs - With Andrea Pataconi) Business Research Methods - Cross Sectional and Panel Data Econometrics in R - Norwich Business School, UEA (MSc Course in Operations Management / Elective for cognate MSc programs - With Roberta Fida)  Brand Digital and Technology - Introduction to Data Driven Marketing - Norwich Business School, UEA (MSc Course in Brand Leadership - With Alfonso Avilla Merinho)   Past  Information Systems for Management (Full-time MBA, September 2017).
-      
-    </div>
-  </div>
   
-  <div>
-    <h2><a href="/teaching/rvest-rselenium/">Using Rselenium to overcome Rvest limitations</a></h2>
-    <div class="article-style">
-      
-      Rvest vs Rselenium Its very often the case that data crawling needs to accomodate cookie requests from the website and/or by pass login authorizations. While rvest is a great tool to process html text, accomodating cookies and login requests can be quite troublesome.
-The main problem comes with the internals of read_html() function which builds on curl type of requests. This connection is often stateless and may result to 301 http errors.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/teaching/benford/">Benford&#39;s Law</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/teaching/rvest-rselenium.nb/"></a></h2>
-    <div class="article-style">
-      
-      Using Rselenium to overcome Rvest limitations           code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &ldquo;complete&rdquo;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .
-      
-    </div>
-  </div>
   
 
   
+  
 
+  
 
 </div>
+
+    <div class="article-style" itemprop="articleBody">
+      <section id="prerequisites" class="level2">
+<h2>Prerequisites</h2>
+<p>This example builds on the benford.analysis and rattle package in r. If you don’t have the package installed you can type the following:</p>
+<pre class="r"><code>install.packages(&quot;benford.analysis&quot;)
+install.packages(&quot;rattle&quot;)</code></pre>
+<p>To load the package you can type the following:</p>
+<pre class="r"><code>library(benford.analysis)
+# library(rattle)</code></pre>
+</section>
+<section id="basic-example" class="level2">
+<h2>Basic example</h2>
+</section>
+
+    </div>
+
+    
+    
+    
+    
+
+  </div>
+
+</article>
+
+
+
+
+
+
+<div class="article-container">
+  
+
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -322,12 +343,23 @@ The main problem comes with the internals of read_html() function which builds o
 
     
     
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
 
     
     
 
   </body>
 </html>
-
-
 

@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/publicationlists/publications-journals/</loc>
+      <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publicationlists/publications-wp/</loc>
+      <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/teaching/teaching/</loc>
       <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     </url>
@@ -41,7 +59,7 @@
     
     <url>
     
-      <loc>/teaching/teaching/</loc>
+      <loc>/teaching/benford/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,15 +78,6 @@
     <url>
     
       <loc>/publicationlists/publications-edited/</loc>
-      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publicationlists/publications-journals/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -122,15 +131,6 @@
     
     <url>
     
-      <loc>/publicationlists/publications-wp/</loc>
-      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/supervision/</loc>
       <lastmod>2017-04-17T11:01:21-04:00</lastmod>
     </url>
@@ -167,15 +167,6 @@
     
     <url>
     
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -203,6 +194,15 @@
     
     <url>
     
+      <loc>/post/</loc>
+      <lastmod>2017-01-01T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/deep-learning/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
@@ -222,7 +222,7 @@
     <url>
     
       <loc>/post/widgets/</loc>
-      <lastmod>2016-04-19T00:00:00+01:00</lastmod>
+      <lastmod>2016-04-19T00:00:00+03:00</lastmod>
     </url>
     
   
@@ -297,7 +297,7 @@
     <url>
     
       <loc>/tags/hugo/</loc>
-      <lastmod>2016-04-19T00:00:00+01:00</lastmod>
+      <lastmod>2016-04-19T00:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
     
