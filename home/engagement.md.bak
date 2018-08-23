@@ -1,0 +1,31 @@
++++
+# An example of using the custom widget to create your own homepage section.
+# To create more sections, duplicate this file and edit the values below as desired.
+
+date = "2016-04-20T00:00:00"
+draft = false
+
+title = "Business Engagement"
+subtitle = ""
+widget = "custom"
+
+# Order that this section will appear in.
+weight = 3
+
++++
+
+I organize together with my colleague James Conford the <a
+href="https://www.meetup.com/Data-Science-Norfolk/">Data Science Norfolk
+Meetup</a> which is sponsored by AVIVA's data science unit. 
+
+I have also worked as a consultant and senior data scientist for 
+various companies in the automotive, banking and pharmaceutical industry. 
+If you are working for an organization who is interested to work together on
+driving insights from your data. 
+I regularly conduct training clinics on data analytics with R and Python for a 
+variety of research and corporate clients. If you need my help with advisory 
+services or training do not hesitate to contact <a
+href="mailto:n.korfiatis@uea.ac.uk>me</a> or <a
+href="https://www.uea.ac.uk/business/consultancy">UEA Consulting LTD.<a/>
+</a>  
+You are also welcome to attend one of our Data Science Norfolk Meetups.

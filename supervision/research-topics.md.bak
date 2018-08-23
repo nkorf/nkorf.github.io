@@ -1,0 +1,59 @@
+---
+title: Research Topics
+author: 'N Korf'
+date: '2017-10-01'
+slug: research-topics
+categories: []
+tags: []
+---
+
+<blockquote>If you wish to discuss these topics with me, please send me an 
+email. I am also open to discuss other ideas which are somehow related with the 
+topics below.</blockquote>
+ 
+## Research topics for MSc and PhD theses
+
+### What can we learn by exploiting the velocity of blockchain transactions?
+
+Blockchain transactions for several forms of cryptocurencies (bitcoin) take place 
+in a blazing fast pace. What can we learn by studying the velocity of the 
+blockchain transactions? Is market activity in blockchain transcations a good 
+indication of economic activity? How do macroeconomic indicators affect their 
+speed?
+
+### Transaction repudation in blockchain protocols: The consumer side.
+
+While a transaction in a normal currency is generally protected by 
+repudation protocols, cryptocurencies represent a new appraoch on how 
+repudation protocols are administered. Do consumers understand  
+
+### Online consumer reviews 
+
+There is a large body of literature that discusses how consumers read reviews
+and decide to purchase a product. There are currently several meta-analyses 
+who estimate the impact of the average star rating on sales elasticities for
+particular categories of products. However what is relatively unknown are some
+of the following questions: 
+
++ What is the mechanism behind the filtering and selection of reviews by
+  consumers ? do consumers search reviews with the same intensity for 
+  each product on their consideration set ? 
+
++ How does the rating environment (the variation of the ratings for a given
+  product in the review aggregator) influence the reading propensity of the 
+  consumer. 
+
+### Does content still mater for review helpfulness ? 
+
+In a previous work we showed that readability influences the review 
+helpfulness. Several other studies have reached the same conclusion. However 
+the cognitive mechanism of the willingness to cast a helpful vote is much more
+complex and an understanding needs to be taken. 
+
+### Algorithmic pricing and online reviews
+
++ How do prices influence the rating of a particular product and the 
+  propensity to post a review ? 
+
+### Fake reviews 
++ Do fake reviews really impact competition ? What is their real economic significance?
