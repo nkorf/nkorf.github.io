@@ -9,9 +9,14 @@ tags: []
 
 <ol reversed>
 
-<li><p>Karatzas, A., Stamolampros, P., Daskalakis, G., and  Korfiatis, N. (2017). 
+<li><p>Karatzas, A., Stamolampros, P., Daskalakis, G., and  Korfiatis, N. (2018). 
 The effect of manufacturers’ service transition
 on employee job satisfaction. In <em>Proceedings of the 25th International EurOMA Conference 2018 </em>(D4). Budapest, Hungary.</p></li>  
+
+<li><p>Leonidou, L., Aykol, B., and  Korfiatis, N. (2018). 
+A meta-analysis of the link between power, conflict, opportunism, and satisfaction in
+business-to-business relationships. In <em>European Marketing Academic Annual Conference: EMAC 2018 </em>(D4). Glasgow, United Kingdom.</p></li>  
+
 
 <li><p>Huang, G-H., Korfiatis, N. (2017). 
 To Abandon or Not to Abandon a Mobile Shopping Cart: The Role of Ambivalence. In <em>Proceedings of the  American Marketing Association Winter Educators Conference 2017</em>(D4). Orlando, Florida, United States of America.</p></li>
