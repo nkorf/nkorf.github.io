@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publicationlists/publications-conferences/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2020-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/publicationlists/publications-selected/</loc>
+    <lastmod>2020-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publicationlists/publications-conferences/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -20,11 +25,6 @@
   <url>
     <loc>/supervision/supervision/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publicationlists/publications-selected/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
