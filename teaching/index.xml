@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching and Lecture Notes | Dr Nikolaos Korfiatis</title>
+    <link>/teaching/</link>
+      <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching and Lecture Notes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Teaching and Lecture Notes</title>
+      <link>/teaching/</link>
+    </image>
+    
+    <item>
+      <title>Teaching</title>
+      <link>/teaching/teaching/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/teaching/teaching/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Please see my 
+&lt;a href=&#34;/#contact&#34;&gt;office hours&lt;/a&gt; for appointments concerning assignments and clarifications.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;current&#34;&gt;Current&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Applied Statistics&lt;/strong&gt; - Introduction to R and Regression Analysis. School of Computing Sciences, UEA (With Christopher Greeman) &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information Systems for Management&lt;/strong&gt; - Norwich Business School (Second year Undergraduate Program - With Pat Barrow).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Innovation and Technology Management&lt;/strong&gt; - Norwich Business School (MSc in Operations Management / Elective course for all Programs - With &lt;a href=&#34;https://sites.google.com/site/andreapatacconi/&#34;&gt;Andrea Pataconi&lt;/a&gt;)&lt;/li&gt; 
+&lt;li&gt;&lt;strong&gt;Business Research Methods&lt;/strong&gt; - Cross Sectional and Panel Data Econometrics in R -  Norwich Business School, UEA (MSc Course in Operations Management / Elective for cognate MSc programs -  With Roberta Fida)
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Brand Digital and Technology&lt;/strong&gt; - Introduction to Data Driven Marketing -  Norwich Business School, UEA (MSc Course in Brand Leadership - With Alfonso Avilla Merinho)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;past&#34;&gt;Past&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Information Systems for Management (Full-time MBA, September
+2017)&lt;/strong&gt;. Norwich
+Business School, UEA &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information Systems for Management (Full-time MBA, October 2016)&lt;/strong&gt;. Norwich
+Business School, UEA (Average Student Satisfaction 4.23 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Business Research Methods &lt;/strong&gt; (Lead lecturer for Econometric methods, R Labs). MSc in Management Research / MSc in
+Advanced Business Management. Faculty of Social Sciences, UEA. (Average Student
+Satisfaction 4.15 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Management Information Systems (2nd Year Undergraduate Course, January – June 2017)&lt;/strong&gt;.
+Norwich Business School, UEA (Average Student Satisfaction 4.12 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information Systems for Management (Full-time MBA, October 2016)&lt;/strong&gt;. Norwich
+Business School, UEA (Average Student Satisfaction 4.23 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E-Business (MC-10, Spring Semester 2016)&lt;/strong&gt;. MSc Course Norwich Business School UEA (Average Student Satisfaction 4.75 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E-Business (MC-10, Spring Semester 2015)&lt;/strong&gt;. MSc Course Norwich Business School UEA (Average Student Satisfaction 4.3 /5)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Big Data Analytics (Spring Semester 2014) &lt;/strong&gt;– MSc Course, Goethe University, (Average student satisfaction 4.7/ 5). First course to be offered in Goethe
+University on this domain. Featured also in ZDF. Course administered through a
+teaching assignment (Lehrbeauftragt)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Research Methods in Information Systems (Spring Semester 2012)
+&lt;/strong&gt;– MSc, Goethe University, (Average student satisfaction 4.1/ 5). Course administered through a teaching assignment (Lehrbeauftragt)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information Systems: Web technologies for Electronic
+Commerce&lt;/strong&gt; – MSc (Winter
+Semester 2011), Goethe University, (Average student satisfaction 4.2 out of 5).
+Course administered through a teaching assignment (Lehrbeauftragt)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Rselenium to overcome Rvest limitations</title>
+      <link>/teaching/rvest-rselenium/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/teaching/rvest-rselenium/</guid>
+      <description>
+
+
+&lt;div id=&#34;rvest-vs-rselenium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rvest vs Rselenium&lt;/h2&gt;
+&lt;p&gt;Its very often the case that data crawling needs to accomodate cookie requests
+from the website and/or by pass login authorizations.
+While rvest is a great tool to process html text, accomodating cookies and login
+requests can be quite troublesome.&lt;/p&gt;
+&lt;p&gt;The main problem comes with the internals of &lt;code&gt;read_html()&lt;/code&gt; function which
+builds on &lt;code&gt;curl&lt;/code&gt; type of requests. This connection is often stateless and
+may result to 301 http errors.&lt;/p&gt;
+&lt;p&gt;An easy way to overcome this, is to rely on the browser in order to capture the
+&lt;code&gt;html&lt;/code&gt; part that we wish to parse. Therefore using &lt;code&gt;rselenium&lt;/code&gt; is the
+most efficient way to address that, although it requires some effort to run.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To begin with you need a standalone version of a selenium server (you can download
+the latest version of selenium server from &lt;a href=&#34;https://goo.gl/21wWg8&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The second most important step is to download a browser extension to use with
+the selenium server. I strongly suggest chrome since this is the fastest and
+more convinient one.
+You can download the chrome webdriver extension for your platform from &lt;a href=&#34;https://chromedriver.storage.googleapis.com/index.html?path=2.33/&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once you have it downloaded and unziped it in the same folder assuming that your JRE works fine and you are in windows (for other platforms modify accordingly)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Note that the -port defines the port that the server will run 
+# the -D argument of the jar defines the web driver path 
+# in our case is located on the folder chromedriver_win32 in the 
+# same folder with the selenium server. The version of the selenium 
+# server might change as well. 
+java -Dwebdriver.chrome.driver=chromedriver_win32\chromedriver.exe -jar selenium-server-standalone-3.5.3.jar -port 4445&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-rselenium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using Rselenium&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install the package if you don&amp;#39;t allready have it
+#install.packages(&amp;quot;Rselenium&amp;quot;)
+
+#load the package
+library(RSelenium)
+library(rvest)
+
+#Set to 2 if you don&amp;#39;t want images to load 
+prefs = list(&amp;quot;profile.managed_default_content_settings.images&amp;quot; = 1L)
+cprof &amp;lt;- list(chromeOptions = list(prefs = prefs))
+
+
+#Open browser and navigate to login page
+remDr &amp;lt;- remoteDriver(remoteServerAddr = &amp;quot;localhost&amp;quot;,
+                      extraCapabilities = cprof,
+                      port = 4445L,
+                      browserName = &amp;quot;chrome&amp;quot;)
+
+#Set to True if you want your browser to open in front of you
+remDr$open(silent = F)
+remDr$navigate(&amp;quot;http://www.theurlofyourchoice.com&amp;quot;)
+
+this_page_src &amp;lt;- remDr$getPageSource()
+
+# Use your rvest here to read the html code captured through Rselenium.
+
+page_scr &amp;lt;- read_html(this_page_src)
+
+# Do your rvest staf here 
+
+page_src %&amp;gt;% 
+   html_text()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Benford&#39;s Law</title>
+      <link>/teaching/benford/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/teaching/benford/</guid>
+      <description>
+
+
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;This example builds on the benford.analysis and rattle package in r. If you don’t have
+the package installed you can type the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;benford.analysis&amp;quot;)
+install.packages(&amp;quot;rattle&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To load the package you can type the following:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(benford.analysis)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;basic-example&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Basic example&lt;/h2&gt;
+&lt;p&gt;The benford analysis package comes with a couple of datasets.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/rvest-rselenium.nb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/teaching/rvest-rselenium.nb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research Skills for Postgraduate Researchers</title>
+      <link>/teaching/slides_research_skills_gscholar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/teaching/slides_research_skills_gscholar/</guid>
+      <description>
+
+
+&lt;div id=&#34;in-the-morning&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In the morning&lt;/h1&gt;
+&lt;div id=&#34;getting-up&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Getting up&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Turn off alarm&lt;/li&gt;
+&lt;li&gt;Get out of bed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;breakfast&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Breakfast&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Eat eggs&lt;/li&gt;
+&lt;li&gt;Drink coffee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-the-evening&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In the evening&lt;/h1&gt;
+&lt;div id=&#34;dinner&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dinner&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Eat spaghetti&lt;/li&gt;
+&lt;li&gt;Drink wine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:cars&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/teaching/slides_research_skills_gscholar_files/figure-html/cars-1.png&#34; alt=&#34;A scatterplot.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A scatterplot.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;going-to-sleep&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Going to sleep&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Get in bed&lt;/li&gt;
+&lt;li&gt;Count sheep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

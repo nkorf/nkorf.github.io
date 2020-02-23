@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rscripts | Dr Nikolaos Korfiatis</title>
+    <link>/categories/rscripts/</link>
+      <atom:link href="/categories/rscripts/index.xml" rel="self" type="application/rss+xml" />
+    <description>rscripts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 22 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>rscripts</title>
+      <link>/categories/rscripts/</link>
+    </image>
+    
+    <item>
+      <title>Using Rselenium to overcome Rvest limitations</title>
+      <link>/teaching/rvest-rselenium/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/teaching/rvest-rselenium/</guid>
+      <description>
+
+
+&lt;div id=&#34;rvest-vs-rselenium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Rvest vs Rselenium&lt;/h2&gt;
+&lt;p&gt;Its very often the case that data crawling needs to accomodate cookie requests
+from the website and/or by pass login authorizations.
+While rvest is a great tool to process html text, accomodating cookies and login
+requests can be quite troublesome.&lt;/p&gt;
+&lt;p&gt;The main problem comes with the internals of &lt;code&gt;read_html()&lt;/code&gt; function which
+builds on &lt;code&gt;curl&lt;/code&gt; type of requests. This connection is often stateless and
+may result to 301 http errors.&lt;/p&gt;
+&lt;p&gt;An easy way to overcome this, is to rely on the browser in order to capture the
+&lt;code&gt;html&lt;/code&gt; part that we wish to parse. Therefore using &lt;code&gt;rselenium&lt;/code&gt; is the
+most efficient way to address that, although it requires some effort to run.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To begin with you need a standalone version of a selenium server (you can download
+the latest version of selenium server from &lt;a href=&#34;https://goo.gl/21wWg8&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The second most important step is to download a browser extension to use with
+the selenium server. I strongly suggest chrome since this is the fastest and
+more convinient one.
+You can download the chrome webdriver extension for your platform from &lt;a href=&#34;https://chromedriver.storage.googleapis.com/index.html?path=2.33/&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once you have it downloaded and unziped it in the same folder assuming that your JRE works fine and you are in windows (for other platforms modify accordingly)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Note that the -port defines the port that the server will run 
+# the -D argument of the jar defines the web driver path 
+# in our case is located on the folder chromedriver_win32 in the 
+# same folder with the selenium server. The version of the selenium 
+# server might change as well. 
+java -Dwebdriver.chrome.driver=chromedriver_win32\chromedriver.exe -jar selenium-server-standalone-3.5.3.jar -port 4445&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-rselenium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Using Rselenium&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#install the package if you don&amp;#39;t allready have it
+#install.packages(&amp;quot;Rselenium&amp;quot;)
+
+#load the package
+library(RSelenium)
+library(rvest)
+
+#Set to 2 if you don&amp;#39;t want images to load 
+prefs = list(&amp;quot;profile.managed_default_content_settings.images&amp;quot; = 1L)
+cprof &amp;lt;- list(chromeOptions = list(prefs = prefs))
+
+
+#Open browser and navigate to login page
+remDr &amp;lt;- remoteDriver(remoteServerAddr = &amp;quot;localhost&amp;quot;,
+                      extraCapabilities = cprof,
+                      port = 4445L,
+                      browserName = &amp;quot;chrome&amp;quot;)
+
+#Set to True if you want your browser to open in front of you
+remDr$open(silent = F)
+remDr$navigate(&amp;quot;http://www.theurlofyourchoice.com&amp;quot;)
+
+this_page_src &amp;lt;- remDr$getPageSource()
+
+# Use your rvest here to read the html code captured through Rselenium.
+
+page_scr &amp;lt;- read_html(this_page_src)
+
+# Do your rvest staf here 
+
+page_src %&amp;gt;% 
+   html_text()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
