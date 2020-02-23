@@ -204,6 +204,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38613273-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-38613273-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -983,7 +1021,7 @@ our article at Journal of Business Research
     </div>
     <div class="col-12 col-lg-8">
       <h1 id="biography">Biography</h1>
-<p>I am a Senior Lecturer (Associate Professor) in Business Analytics at 
+<p>I am an Associate Professor in Business Analytics at 
 <a href="http://business.uea.ac.uk" target="_blank" rel="noopener">Norwich
 Business School (NBS)</a> of the 
 <a href="http://www.uea.ac.uk" target="_blank" rel="noopener">University of East
