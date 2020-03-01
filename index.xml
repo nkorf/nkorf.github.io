@@ -44,7 +44,7 @@
  &lt;/li&gt;
 &lt;br&gt;
 &lt;li&gt; Korfiatis N., Stamolampros P.,  Kourouthanasis P., Sagiadinos V. (2018). Measuring service quality from unstructured data: A topic modeling application on airline passengers&#39; online reviews.
-&lt;i&gt;Expert Systems with Applications - Forthcoming&lt;/i&gt; &lt;strong&gt;(CABS 3*)&lt;/strong&gt; [&lt;a href=&#34;https://www.researchgate.net/publication/327681911_Measuring_service_quality_from_unstructured_data_A_topic_modeling_application_on_airline_passengers&#39;_online_reviews&#34;&gt;PDF&lt;/a&gt;]
+&lt;i&gt;Expert Systems with Applications, 116, 472-486&lt;/i&gt; &lt;strong&gt;(CABS 3*)&lt;/strong&gt; [&lt;a href=&#34;https://www.researchgate.net/publication/327681911_Measuring_service_quality_from_unstructured_data_A_topic_modeling_application_on_airline_passengers&#39;_online_reviews&#34;&gt;PDF&lt;/a&gt;]
 &lt;/li&gt;
 &lt;br&gt;
 &lt;li&gt; Chopdar Kr Pr., Korfiatis, N., Sivakumar V.J., Lytras, M. (2018).
@@ -746,6 +746,11 @@ install.packages(&amp;quot;rattle&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       <guid>/publicationlists/publications-edited/</guid>
       <description>&lt;ol reversed&gt;
+&lt;li&gt;&lt;p&gt;Ivanov, T., Izberovic, S., Korfiatis, N. (2016). The Heterogeneity Paradigm
+in Big Data Architectures. In Rajkumar, K., Raihan Ur, R., Hai, J., and
+Balasundaram, S., editors, Managing and Processing Big Data in Cloud Computing,
+Advances in Data Mining and Database Management (ADMDM), pp. 218-245. Idea Group
+Publishing.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Zicari, R. V., Rosselli, M., Ivanov, T., Korfiatis, N., Tolle, K.,
 Niemann,R., &amp; Reichenbach, C.. (2016). Setting up a Big Data Project:
 Challenges, Opportunities, Technologies and Optimization. In Mrouznejad, A.
