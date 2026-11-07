@@ -18,9 +18,57 @@ type: page
 
 ## 2025
 
+- **12.2025** Two HeCOG translational studies presented at the San Antonio Breast Cancer Symposium: HER2-low early breast cancer across seven adjuvant trials, and germline and somatic pathogenic variants in de novo metastatic breast cancer.
+- **10.2025** Digitally reported adverse events of patients with advanced NSCLC in the CLIMEDIN study, in the *Journal of Thoracic Oncology* abstract supplement. [DOI](https://doi.org/10.1016/j.jtho.2025.09.737).
 - **25.07.2025** The PAVE phase II trial of intercalated avelumab with chemotherapy in extensive-stage small-cell lung cancer is published in the *European Journal of Cancer*. [DOI](https://doi.org/10.1016/j.ejca.2025.115660).
-- **06.2025** *Bitcoin's Edge: Embedded Sentiment in Blockchain Transactional Data*, with Charalampos Kleitsikas, Stefanos Leonardos and Carmine Ventre, at IEEE ICBC 2025. [DOI](https://doi.org/10.1109/ICBC64466.2025.11114477).
-- **2025** Our paper with Dimitrios Dousios and Konstantina Spanaki on text and audio features in technology crowdfunding is published in *IEEE Transactions on Engineering Management*. [DOI](https://doi.org/10.1109/TEM.2025.3549597).
+- **11.06.2025** Hands-on workshops at the summer school on artificial intelligence in oncology, Ionian Academy, Corfu (11 to 17 June).
+- **06.2025** The SNF-CLIMEDIN randomised trial of digital support in advanced NSCLC at the ASCO Annual Meeting (abstract 1515, *Journal of Clinical Oncology* supplement). [DOI](https://doi.org/10.1200/JCO.2025.43.16_suppl.1515).
+- **02.06.2025** *Bitcoin's Edge: Embedded Sentiment in Blockchain Transactional Data*, with Charalampos Kleitsikas, Stefanos Leonardos and Carmine Ventre, at IEEE ICBC 2025. [DOI](https://doi.org/10.1109/ICBC64466.2025.11114477).
+- **06.2025** Our paper with Dimitrios Dousios and Konstantina Spanaki on text and audio features in technology crowdfunding is published in *IEEE Transactions on Engineering Management* (CABS 3\*). [DOI](https://doi.org/10.1109/TEM.2025.3549597).
+- **05.2025** Pooled analysis of dose-dense sequential adjuvant chemotherapy in early breast cancer with HeCOG, in the *ESMO Open* abstract supplement. [DOI](https://doi.org/10.1016/j.esmoop.2025.104621).
+- **03.2025** The A-REPEAT study of anti-EGFR re-challenge in RAS wild-type advanced colorectal cancer is published in *ESMO Gastrointestinal Oncology*. [DOI](https://doi.org/10.1016/j.esmogo.2024.100120).
+- **02.2025** The HeCOG phase II study of cabazitaxel in castration-resistant prostate cancer with bone metastases is published in *Clinical Genitourinary Cancer*. [DOI](https://doi.org/10.1016/j.clgc.2024.102253).
+
+## 2024
+
+- **11.2024** Member of the evaluation committee of the AI & Data Awards 2025 (Boussias).
+- **12.08.2024** Appointment as Professor at the Department of Informatics, Ionian University, published in the Government Gazette (ΦΕΚ 2409/12-8-2024, τ. Γ΄).
+- **06.2024** Chaired the «Defining AI» table at the AI in Oncology workshop in Spetses.
+- **06.2024** Our paper with Evangelia Palla, Leonidas Hatzithomas, Polyxeni Palla and George Lekakos on mobile and desktop museum reviews on TripAdvisor at HCI International 2024. [DOI](https://doi.org/10.1007/978-3-031-60487-4_22).
+- **06.2024** The design of the SNF-CLIMEDIN randomised trial of digital intervention in advanced NSCLC at the ASCO Annual Meeting (*Journal of Clinical Oncology* supplement).
+- **08.04.2024** Our paper with Nan Yang, Dimitrios Dousios and Konstantinos Chalvatzis, *Mapping the signaling environment between sustainability-focused entrepreneurship and investment inputs: A topic modeling approach*, is published in *Business Strategy and the Environment* (CABS 3\*). [DOI](https://doi.org/10.1002/bse.3748).
+- **2024** PhDs completed at Norwich Business School by Fahad Alaboush, now at the University of Hail, and Rawan Quidah, now at the University of East Anglia.
+
+## 2023
+
+- **10.2023** First results of the CLIMEDIN study of digital support for patients with advanced NSCLC, with Helena Linardou and colleagues at HeCOG, in the *Annals of Oncology* abstract supplement (ESMO Congress 2023).
+- **22.08.2023** Our paper with Mehmet Chakkol, Mark Johnson, Antonios Karatzas and Georgios Papadopoulos, *Making Supply Chains Great Again: Examining structural changes to US manufacturing supply chains*, is published in the *International Journal of Operations and Production Management* (CABS 4\*). [DOI](https://doi.org/10.1108/IJOPM-12-2022-0783).
+- **19.06.2023** Our paper with Nan Yang, Dimitris Zissis and Konstantina Spanaki on review rating prediction with topic membership and gradient boosting is published in *Annals of Operations Research* (CABS 3\*). [DOI](https://doi.org/10.1007/s10479-023-05336-z).
+- **17.01.2023** Our paper with Antonios Karatzas, Georgios Papadopoulos, Panagiotis Stamolampros and Jawwad Z. Raja on front- and back-end employee satisfaction during service transition is published in the *International Journal of Operations and Production Management* (CABS 4\*). [DOI](https://doi.org/10.1108/IJOPM-06-2022-0352).
+- **2023** PhD completed at Norwich Business School by Rasem Quidah, now at the University of Suffolk.
+
+## 2022
+
+- **11.2022** Our meta-analysis with Leonidas C. Leonidou, Pantelitsa P. Eteokleous and Anna-Maria Christofi on consumer intention to buy organic goods is published in the *Journal of Business Research* (CABS 3\*). [DOI](https://doi.org/10.1016/j.jbusres.2022.06.027).
+- **25.08.2022** Our meta-analysis with Bilge Aykol, Leonidas C. Leonidou and Saeed Samiee on consumer foreign country image perceptions is published in *Management International Review* (CABS 3\*). [DOI](https://doi.org/10.1007/s11575-022-00482-1).
+- **16.03.2022** Our paper with Maria Argyropoulou, Dimitris Zissis and Eleni Zampou on horizontal collaboration in last-mile distribution is published in *Benchmarking: An International Journal*. [DOI](https://doi.org/10.1108/BIJ-06-2021-0328).
+- **02.2022** Our paper with Prasanta Kr. Chopdar, Justin Paul and Miltiadis D. Lytras on consumer impulsiveness in multiple app usage among mobile shoppers is published in the *Journal of Business Research* (CABS 3\*). [DOI](https://doi.org/10.1016/j.jbusres.2021.11.031).
+
+## 2021
+
+- **25.04.2021** Our paper with Naoum Tsolakis, Dimitris Zissis and Spiros Papaefthimiou, *Towards AI driven environmental sustainability: an application of automated logistics in container port terminals*, is published in the *International Journal of Production Research* (CABS 3\*). It is later cited in an OECD trade policy paper. [DOI](https://doi.org/10.1080/00207543.2021.1914355).
+- **01.2021** Our paper with Efthymia Symitsi, Panagiotis Stamolampros and George Daskalakis, *The informational value of employee online reviews*, is published in the *European Journal of Operational Research* (CABS 4\*). [DOI](https://doi.org/10.1016/j.ejor.2020.06.001).
+- **2021** PhD completed at Norwich Business School by Nancy Yang, now at Warwick Business School.
+
+## 2020
+
+- **06.2020** Our paper with Panagiotis Stamolampros, Dimitrios Dousios and Efthymia Symitsi on the joint effect of consumer and provider culture on online service evaluations is published in *Tourism Management* (CABS 4\*). [DOI](https://doi.org/10.1016/j.tourman.2019.104057).
+- **05.2020** Our paper with Panagiotis Stamolampros and Dimitrios Dousios on domestic bias in airline passengers' online reviews is published in the *International Journal of Hospitality Management* (CABS 3\*). [DOI](https://doi.org/10.1016/j.ijhm.2020.102466).
+- **2020** Our 2013 paper with Marios Poulos in *Expert Systems with Applications* is cited as prior art in IBM patent US10755363B2, *Augmented Reviews with Cognitive Reasoning*.
+- **2020** Book chapter with Michalis Kouroupis and James Cornford on AI-assisted detection of diabetic retinopathy in the NHS, in *Innovation in Health Informatics* (Elsevier).
+- **13.01.2020** Our paper with Marios Poulos and Sozon Papavlassopoulos on stationarity in web analytics bounce rates is published in *Expert Systems*. [DOI](https://doi.org/10.1111/exsy.12502).
+- **01.2020** Our paper with Panagiotis Stamolampros, Konstantinos Chalvatzis and Dimitrios Buhalis, *Harnessing the Wisdom of Employees from Online Reviews*, is published in *Annals of Tourism Research* (CABS 4\*). [DOI](https://doi.org/10.1016/j.annals.2019.02.012).
+- **2020** PhD completed at Norwich Business School by Yimeng Li, now at the School of Management, Guizhou University.
 
 ## Archive (2017 to 2019)
 
