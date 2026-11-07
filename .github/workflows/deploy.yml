@@ -1,0 +1,101 @@
+name: Build and deploy site
+
+# Publications, clinical trials, policy citations, the CV PDF and the photo
+# come from github.com/nkorf/nkorf. The daily run picks up changes there
+# without a commit to this repository.
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [profile-updated]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: 0.166.0
+  GO_VERSION: '1.25'
+  NODE_VERSION: '22'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          repository: nkorf/nkorf
+          path: profile
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate content from the profile repository
+        run: |
+          pip install -r profile/requirements.txt pyyaml
+          python scripts/sync_profile.py --profile profile --site .
+          rm -rf profile
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Hugo
+        run: |
+          wget -q -O "${RUNNER_TEMP}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${RUNNER_TEMP}/hugo.deb"
+          hugo version
+
+      - name: Install Node packages
+        run: npm ci --no-audit --no-fund
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        env:
+          HUGO_ENVIRONMENT: production
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Build search index
+        run: npx pagefind --site public
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

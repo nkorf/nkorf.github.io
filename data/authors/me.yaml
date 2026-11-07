@@ -1,0 +1,117 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Nikolaos Korfiatis
+  given: Nikolaos
+  family: Korfiatis
+  alternate: 'Νικόλαος Κορφιάτης'
+postnominals:
+  - FRSA
+  - FHEA
+role: Professor of Data Management and Analytics
+bio: |
+  Professor of Data Management and Analytics at the Department of Informatics,
+  Ionian University, Corfu. Senior Statistician of the Hellenic Cooperative
+  Oncology Group (HeCOG).
+
+affiliations:
+  - name: Department of Informatics, Ionian University
+    url: https://di.ionio.gr/en/
+  - name: Information Systems and Databases Laboratory (ISDLab)
+    url: https://isdlab.di.ionio.gr/
+  - name: Hellenic Cooperative Oncology Group (HeCOG)
+    url: https://www.hecog.gr/
+
+links:
+  - icon: at-symbol
+    url: mailto:nkorf@ionio.gr
+    label: E-mail
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=T4VGRUIAAAAJ
+    label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0001-6377-4837
+    label: ORCID
+  - icon: brands/github
+    url: https://github.com/nkorf
+    label: GitHub
+  - icon: academicons/cv
+    url: uploads/korfiatis_cv.pdf
+    label: CV
+
+interests:
+  - Business analytics and data science
+  - Natural language processing and text mining
+  - Machine learning and AI (LLMs, RAG, zero-shot classification)
+  - Online consumer behaviour and electronic word of mouth
+  - Service quality and operations management
+  - Biostatistics and clinical trial analysis
+
+education:
+  - degree: PhD in Informatics
+    institution: Copenhagen Business School, Denmark
+    year: 2009
+    end: 2009-12-31
+    summary: |
+      Thesis: *Information Exchange and Behavior: A Multi-method Inquiry on
+      Online Communities*. Supervisor: Professor Volker Mahnke.
+  - degree: Postgraduate Certificate in Higher Education Practice
+    institution: University of East Anglia, United Kingdom
+    year: 2017
+    end: 2017-12-31
+  - degree: MSc in Interactive Systems Engineering
+    institution: Royal Institute of Technology (KTH), Sweden
+    year: 2005
+    end: 2005-12-31
+    summary: |
+      Information retrieval and human-computer interaction. Thesis: *The
+      Opinion Evaluation Network: Ranking Imprecise Social Interactions*.
+  - degree: BSc in Management Science and Technology
+    institution: Athens University of Economics and Business, Greece
+    year: 2004
+    end: 2004-12-31
+
+experience:
+  - role: Professor of Data Management and Analytics
+    org: Department of Informatics, Ionian University, Greece
+    start: 2022-01-01
+  - role: Associate Professor in Business Analytics
+    org: Norwich Business School, University of East Anglia, United Kingdom
+    start: 2016-01-01
+    end: 2022-12-31
+  - role: Assistant Professor in Business Analytics
+    org: Norwich Business School, University of East Anglia, United Kingdom
+    start: 2015-01-01
+    end: 2016-12-31
+  - role: Director, Big Data Laboratory, and Senior Researcher
+    org: Chair for Databases and Information Systems, Goethe University Frankfurt, Germany
+    start: 2011-01-01
+    end: 2015-12-31
+  - role: Assistant Professor (non tenure track)
+    org: Department of Economics, University of Copenhagen, Denmark
+    start: 2009-01-01
+    end: 2011-12-31
+  - role: PhD Fellow
+    org: Department of Informatics, Copenhagen Business School, Denmark
+    start: 2006-01-01
+    end: 2009-12-31
+
+awards:
+  - title: Fellow of the Royal Society of Arts (FRSA)
+    awarder: Royal Society for the encouragement of Arts, Manufactures and Commerce
+    icon: hero/academic-cap
+  - title: Fellow of the Higher Education Academy (FHEA)
+    awarder: Advance HE, United Kingdom
+    icon: hero/academic-cap
+
+languages:
+  - name: Greek
+    level: 5
+    label: Native
+  - name: English
+    level: 5
+    label: Fluent
+  - name: German
+    level: 4
+    label: Advanced
