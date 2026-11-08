@@ -1,0 +1,61 @@
+{{/*
+  Publications as one numbered list, grouped into the sections of
+  github.com/nkorf/nkorf/publications.md and numbered alike. pub_section,
+  pub_number and pub_order are written by scripts/sync_profile.py.
+*/}}
+{{ define "main" }}
+
+{{ $pages := sort (where .Pages "Params.pub_order" "!=" nil) "Params.pub_order" }}
+{{ $sections := slice }}
+{{ range $pages }}{{ $sections = $sections | append .Params.pub_section }}{{ end }}
+{{ $sections = uniq $sections }}
+
+<div class="flex flex-col items-center">
+  <div class="container max-w-3xl w-full px-4">
+
+    <article class="prose prose-slate lg:prose-xl dark:prose-invert max-w-none mb-10">
+      <h1 class="lg:text-6xl">{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+
+    <nav aria-label="Publication sections" class="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      {{ range $sections }}
+      <a href="#{{ anchorize . }}" class="underline">{{ . }} ({{ len (where $pages "Params.pub_section" .) }})</a>
+      {{ end }}
+    </nav>
+
+    {{ range $sections }}
+    {{ $section := . }}
+    <section id="{{ anchorize $section }}" class="mt-12 scroll-mt-24">
+      <h2 class="text-2xl font-bold mb-6">{{ $section }}</h2>
+      <ol class="list-none p-0 m-0 flex flex-col space-y-3">
+        {{ range where $pages "Params.pub_section" $section }}
+        {{ $item := . }}
+        {{ $year := $item.Date.Format "2006" }}
+        {{ $pub := partial "functions/resolve_publication.html" $item }}
+        <li class="pub-list-item view-citation flex gap-3" style="margin-bottom: 1rem">
+          <span class="font-semibold tabular-nums shrink-0 w-12 text-right">[{{ $item.Params.pub_number }}]</span>
+          <div class="min-w-0">
+            <span class="article-metadata li-cite-author">
+              {{ partial "page_metadata_authors" $item }}
+            </span>
+            ({{- $year -}}).
+            <a href="{{ $item.RelPermalink }}" class="underline">{{ $item.Title }}</a>.
+            {{ with $pub.display_short }}{{- . | markdownify -}}.{{ end }}
+            {{ with $item.Params.cabs }}<strong>(CABS {{ . }})</strong>{{ end }}
+            {{ if partial "functions/has_attachments" $item }}
+            <div class="flex flex-wrap space-x-3">
+              {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+            </div>
+            {{ end }}
+          </div>
+        </li>
+        {{ end }}
+      </ol>
+    </section>
+    {{ end }}
+
+  </div>
+</div>
+
+{{ end }}

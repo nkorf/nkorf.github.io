@@ -47,6 +47,37 @@ TYPE_LABELS = {
 }
 
 
+OLD_LIST_URLS = (
+    "publications-journals", "publications-conferences", "publications-edited",
+    "publications-selected", "publications-wp", "publications-theses", "list",
+)
+
+INDEX_PAGE = (
+    "---\ntitle: Publications\naliases:\n"
+    + "".join(f"  - /publicationlists/{name}/\n" for name in OLD_LIST_URLS)
+    + "  - /publicationlists/\n---\n\n"
+    "Numbered as in the [full list on GitHub]"
+    "(https://github.com/nkorf/nkorf/blob/main/publications.md), "
+    "newest first within each section. CABS denotes the ranking in the "
+    "Chartered Association of Business Schools Academic Journal Guide. "
+    "See also the [clinical trials](/clinical-trials/) and the "
+    "[policy impact](/policy-citations/) of this work.\n"
+)
+
+
+def section_numbers(groups) -> dict:
+    """Bib key -> section title, number and overall position, as on GitHub."""
+    numbering = {}
+    for _, title, numbered in groups:
+        for num, entry in numbered:
+            numbering[entry["ID"]] = {
+                "pub_section": title,
+                "pub_number": num,
+                "pub_order": len(numbering) + 1,
+            }
+    return numbering
+
+
 def load_generator(profile: Path):
     """Import generate_publications.py from the profile repo as a module."""
     spec = importlib.util.spec_from_file_location(
@@ -88,7 +119,7 @@ def cite_bib(entry: dict) -> str:
     return f"@{entry['ENTRYTYPE']}{{{entry['ID']},\n{body}\n}}\n"
 
 
-def publication_page(entry: dict) -> tuple:
+def publication_page(entry: dict, numbering: dict) -> tuple:
     category = entry.get("category", "journal")
     pub_type = PUB_TYPES.get(category, "article-journal")
     year = re.sub(r"\D", "", entry.get("year", "")) or "1900"
@@ -133,6 +164,10 @@ def publication_page(entry: dict) -> tuple:
         "tags": tags,
         "featured": entry.get("cabs", "").strip() == "4",
     }
+    if entry["ID"] in numbering:
+        front.update(numbering[entry["ID"]])
+    if entry.get("cabs"):
+        front["cabs"] = entry["cabs"].strip()
     if entry.get("doi"):
         front["hugoblox"] = {"ids": {"doi": entry["doi"].strip()}}
     if links:
@@ -173,21 +208,20 @@ def main():
 
     gen = load_generator(args.profile)
     entries = gen.load_bibtex(str(args.profile / "publications.bib"))
+    if not hasattr(gen, "numbered_by_category"):
+        raise SystemExit("generate_publications.py has no numbered_by_category(); "
+                         "update github.com/nkorf/nkorf")
+    numbering = section_numbers(gen.numbered_by_category(entries))
 
     pubs = args.site / "content" / "publications"
     for child in pubs.iterdir() if pubs.exists() else []:
         if child.is_dir():
             shutil.rmtree(child)
     pubs.mkdir(parents=True, exist_ok=True)
-    (pubs / "_index.md").write_text(
-        "---\ntitle: Publications\nview: citation\naliases:\n"
-        + "".join(f"  - /publicationlists/{name}/\n" for name in (
-            "publications-journals", "publications-conferences", "publications-edited",
-            "publications-selected", "publications-wp", "publications-theses", "list"))
-        + "  - /publicationlists/\n---\n", encoding="utf-8")
+    (pubs / "_index.md").write_text(INDEX_PAGE, encoding="utf-8")
 
     for entry in entries:
-        page, bib = publication_page(entry)
+        page, bib = publication_page(entry, numbering)
         folder = pubs / entry["ID"].lower()
         folder.mkdir()
         (folder / "index.md").write_text(page, encoding="utf-8")
@@ -211,7 +245,12 @@ def main():
         dst.mkdir(parents=True, exist_ok=True)
         shutil.copy2(photo, dst / "me.jpg")
 
-    print(f"{len(entries)} publications written to {pubs}")
+    unlisted = sorted(e["ID"] for e in entries if e["ID"] not in numbering)
+    if unlisted:
+        print("not in the numbered list (category outside CATEGORY_ORDER): "
+              + ", ".join(unlisted))
+    print(f"{len(entries)} publications written to {pubs}, "
+          f"{len(numbering)} numbered")
 
 
 if __name__ == "__main__":
