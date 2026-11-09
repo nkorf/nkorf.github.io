@@ -47,7 +47,6 @@ type: page
 - «Smartphone-Shopper kaufen nur selten». ICT kommunikation, 11.01.2018 [in German]. No longer online.
 - «Smartphone-Shopper kaufen nur selten». IT Daily, 10.01.2018 [in German]. Archived copy: <https://web.archive.org/web/20190722104604/https://www.it-daily.net/analysen/17664-smartphone-shopper-kaufen-nur-selten>
 - «E-handelskunder backar ofta ur köp på mobilen». Computer Sweden, 11.01.2018 [in Swedish]. Archived copy: <https://web.archive.org/web/20180120155348/https://computersweden.idg.se/2.2683/1.695884/e-handel-mobil-backar>
-- «This is why businesses should be spending money to keep their staff happy». World Economic Forum Agenda, with The Conversation, 27.11.2017, by George Daskalakis on our Glassdoor study. <https://www.weforum.org/stories/jobs-and-the-future-of-work/is-it-worth-spending-money-to-keep-staff-happy>
 
 ## Research cited in policy documents
 
