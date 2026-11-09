@@ -13,6 +13,12 @@ type: page
 
 ## Print and web
 
+- «Donald Trump is planning more trade barriers if he becomes president – but they didn't work last time». The Conversation, 22.10.2024, by Mark Johnson and Mehmet Chakkol on our study in the *International Journal of Operations & Production Management*. Republished by [Asia Times](https://asiatimes.com/2024/10/trumps-tariffs-didnt-work-last-time-and-wouldnt-likely-now/) (25.10.2024) and [Warwick Business School](https://www.wbs.ac.uk/news/trump-wants-more-trade-tariffs/) (29.10.2024). <https://theconversation.com/donald-trump-is-planning-more-trade-barriers-if-he-becomes-president-but-they-didnt-work-last-time-240964>
+- «Good Leadership and Values Key to Staff Satisfaction, Study Finds». Hotel Online, 23.05.2019. <https://www.hotel-online.com/news/good-leadership-and-values-key-to-staff-satisfaction-study-finds>
+- «Good leadership and values key to staff satisfaction, study finds». domain-b.com, 21.05.2019. <https://www.domain-b.com/management/management-general/good-leadership-and-values-key-to-staff-satisfaction-study-finds>
+- «Good leadership and values key to staff satisfaction, study finds». EurekAlert!, 20.05.2019 (University of East Anglia press release). <https://www.eurekalert.org/news-releases/873986> Also in ScienceDaily: <https://www.sciencedaily.com/releases/2019/05/190520103606.htm>
+- «Take online reviews with a pinch of salt, says study». Eastern Daily Press, 05.11.2018. <https://www.edp24.co.uk/news/20722715.take-online-reviews-pinch-salt-says-study/>
+- «Five out of five? Study reveals psychological influences in online reviews». EurekAlert!, 26.10.2018 (University of East Anglia press release). <https://www.eurekalert.org/news-releases/592160> Also in ScienceDaily: <https://www.sciencedaily.com/releases/2018/10/181026102619.htm>
 - Quoted on online restaurant reviews. Horizonte, research magazine of the Swiss National Science Foundation, 05.06.2018 [in German]. <https://www.horizonte-magazin.ch/2018/06/05/fuenf-sterne-ist-das-selbst-bezahlte-essen-wert/>
 - Glassdoor ratings and company performance in the United Kingdom, commissioned study presented at Glassdoor's Best Places to Work, London, 29.03.2018. <https://www.glassdoor.co.uk/blog/people-drive-profit-glassdoor-ratings-linked-company-performance-united-kingdom/>
 - Coverage of our study with Efthymia Symitsi, Panagiotis Stamolampros and George Daskalakis in The Independent and by Moody's Analytics (Bureau van Dijk), 29.03.2018.
@@ -25,6 +31,15 @@ type: page
 - «Research boosts understanding of high rates of mobile cart abandonment». BizReport. <http://www.bizreport.com/2018/01/research-boosts-understanding-of-high-rates-of-mobile-cart-a.html>
 - «Why consumers still hesitate on shopping online via smartphones». The Financial Express. <http://www.financialexpress.com/industry/technology/why-consumers-still-hesitate-on-shopping-online-via-smartphones/1006355/>
 - «Why people hesitate shopping on smartphone apps found». The Tribune (India). <http://www.tribuneindia.com/news/science-technology/why-people-hesitate-shopping-on-smartphone-apps-found/525437.html>
+- «Proceed to checkout? Not on your mobile, say researchers». ScienceDaily, 06.01.2018 (University of East Anglia press release). <https://www.sciencedaily.com/releases/2018/01/180105093903.htm>
+- «Here's why people hesitate to shop on smartphone apps». Hindustan Times, 08.01.2018. <https://www.hindustantimes.com/more-lifestyle/here-s-why-people-hesitate-to-shop-on-smartphone-apps/story-ILHd3L7WzrwzBJ9CINrDaM.html>
+- «Why people hesitate shopping on smartphone apps found». Business Standard (PTI), 08.01.2018. <https://www.business-standard.com/article/pti-stories/why-people-hesitate-shopping-on-smartphone-apps-found-118010800366_1.html>
+- «Why consumers still hesitate on shopping online via smartphones». Business Standard (IANS), 08.01.2018. <https://www.business-standard.com/article/news-ians/why-consumers-still-hesitate-on-shopping-online-via-smartphones-118010800276_1.html>
+- «Why consumers still hesitate on shopping online via smartphones». The New Indian Express (IANS), 08.01.2018. <https://www.newindianexpress.com/business/2018/Jan/08/why-consumers-still-hesitate-on-shopping-online-via-smartphones-1747559.html>
+- «Why people hesitate shopping on smartphone apps found». The New Indian Express (PTI), 08.01.2018. <https://www.newindianexpress.com/pti-news/2018/Jan/08/why-people-hesitate-shopping-on-smartphone-apps-found-1747596.html>
+- «Online shoppers hesitate from buying products on smartphones: Study». The Indian Express, 08.01.2018. <https://indianexpress.com/article/technology/tech-news-technology/online-shoppers-hesitate-from-buying-products-on-smartphones-study-5016336/>
+- «Why consumers still hesitate on shopping online via smartphones». The News Minute (IANS), 08.01.2018. <https://www.thenewsminute.com/news/why-consumers-still-hesitate-shopping-online-smartphones-74372>
+- «'Consumers hesitate to buy goods using smartphones and tablets'». SME Futures, 08.01.2018. <https://smefutures.com/consumers-hesitate-buy-goods-using-smartphones-tablets/>
 - «Shopping cart abandonment poses fresh challenge for online retailers». Business Advice. <http://businessadvice.co.uk/high-streets-initiative/shopping-cart-abandonment-poses-fresh-challenge-for-online-retailers/>
 - «Checking out before the checkout: why are mobile shoppers abandoning their carts?». Barber Design. <https://barberdesign.co.uk/blog/why-are-mobile-shoppers-abandoning-their-carts/>
 - «Smartphone-Shopper kaufen nur selten». wallstreet:online, 10.01.2018 [in German]. <https://www.wallstreet-online.de/nachricht/10186379-smartphone-shopper-kaufen-selten>
@@ -32,7 +47,8 @@ type: page
 - «Smartphone-Shopper kaufen nur selten». ICT kommunikation, 11.01.2018 [in German]. <http://ictk.ch/content/smartphone-shopper-kaufen-nur-selten>
 - «Smartphone-Shopper kaufen nur selten». IT Daily, 10.01.2018 [in German]. <https://www.it-daily.net/analysen/17664-smartphone-shopper-kaufen-nur-selten>
 - «E-handelskunder backar ofta ur köp på mobilen». Computer Sweden, 11.01.2018 [in Swedish]. <https://computersweden.idg.se/2.2683/1.695884/e-handel-mobil-backar>
+- «This is why businesses should be spending money to keep their staff happy». World Economic Forum Agenda, with The Conversation, 27.11.2017, by George Daskalakis on our Glassdoor study. <https://www.weforum.org/stories/jobs-and-the-future-of-work/is-it-worth-spending-money-to-keep-staff-happy>
 
 ## Research cited in policy documents
 
-See [Policy Impact](../policy-citations/) for citations of my work by the OECD, UNESCO, the European Commission, the Inter-American Development Bank and an IBM patent.
+See [Policy Impact](../policy-citations/) for citations of my work by the OECD, UNESCO, the European Commission, the Inter-American Development Bank and the Dutch Ministry of Infrastructure and Water Management, and in patents of IBM, Reputation.com, Koubei (Alibaba) and Merify.
