@@ -7,7 +7,7 @@ type: page
 
 - **04.11.2026** Interview on the demographic problem of Corfu in the programme «Θέσεις & Αντιθέσεις» of Corfu Channel (in Greek). [Watch](https://youtu.be/8OR1grRmWZQ).
 - **03.11.2026** Our BRACE study with Evangelia Razis and colleagues at the Hellenic Cooperative Oncology Group (HeCOG), on the brain as a site of first recurrence after adjuvant therapy for early breast cancer, is published in *Breast Cancer Research and Treatment*. [DOI](https://doi.org/10.1007/s10549-026-08085-2).
-- **23.10.2026** Talk with Antonios Polentas, *Less Is More? Prompt Brevity, Token Economies and the Displacement of Agency*, at AICENE «Re-examining AI / Rethinking Modernity», Corfu.
+- **23.10.2026** Talk with Antonios Polentas, *Less Is More? Prompt Brevity, Token Economies and the Displacement of Agency*, at AICENE «Re-examining AI / Rethinking Modernity», Corfu. [Programme](https://ionio.gr/en/news/35315/) ([archived PDF](/archive/2026-10-aicene-programme.pdf)).
 - **16.10.2026** Our paper with George Papaxoinis and colleagues at HeCOG, the RACING phase Ib-II trial in advanced pancreatic adenocarcinoma, is accepted at *Cancer Treatment and Research Communications* (open access). [DOI](https://doi.org/10.1016/j.ctarc.2026.101481).
 - **03.10.2026** Plenary lecture at DESSERT 2026, the 16th International Conference on Dependable Systems, Services and Technologies, Ionian Academy, Corfu: *Dependable Agentic AI in Regulated Environments: From Model Accuracy to System Accountability*.
 - **12.05.2026** Our paper with Evangelia Palla, Leonidas Hatzithomas and George Lekakos, *Museum Service Recovery: Emotion Regulation in Responses to Online Negative Reviews*, is online at *Tourism Review*. [DOI](https://doi.org/10.1108/TR-08-2025-0917).
