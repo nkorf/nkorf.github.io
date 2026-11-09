@@ -8,6 +8,7 @@ type: page
 ## Television and video
 
 - «Οι ιδιαιτερότητες του δημογραφικού της Κέρκυρας». Interview in «Θέσεις & Αντιθέσεις», Corfu Channel, 04.11.2026 [in Greek]. <https://youtu.be/8OR1grRmWZQ>
+- «Τεχνητή νοημοσύνη, Πανεπιστήμιο και Κοινωνία». Interview with Kostas Vergos in «Περιγράμματα», enimerosi.com, 02.05.2025 [in Greek]. <https://enimerosi.com/Media/96440/texniti-noimosuni-panepistimio-kai-koinonia> Video: <https://youtu.be/JHRP1z4vyUg>
 - «Compras electrónicas en dispositivos móviles». NTN24: Ciencia, Salud y Tecnología, 23.01.2018 [in Spanish]. No longer online.
 - «Datenanalyst». ZDF Elektrischer Reporter, 17.12.2014 [in German]. <https://youtu.be/1LdrXSiZYi4?t=3m19s>
 
@@ -19,7 +20,7 @@ type: page
 - «Good leadership and values key to staff satisfaction, study finds». EurekAlert!, 20.05.2019 (University of East Anglia press release). <https://www.eurekalert.org/news-releases/873986> Also in ScienceDaily: <https://www.sciencedaily.com/releases/2019/05/190520103606.htm>
 - «Take online reviews with a pinch of salt, says study». Eastern Daily Press, 05.11.2018. <https://www.edp24.co.uk/news/20722715.take-online-reviews-pinch-salt-says-study/>
 - «Five out of five? Study reveals psychological influences in online reviews». EurekAlert!, 26.10.2018 (University of East Anglia press release). <https://www.eurekalert.org/news-releases/592160> Also in ScienceDaily: <https://www.sciencedaily.com/releases/2018/10/181026102619.htm>
-- Quoted on online restaurant reviews. Horizonte, research magazine of the Swiss National Science Foundation, 05.06.2018 [in German]. <https://www.horizonte-magazin.ch/2018/06/05/fuenf-sterne-ist-das-selbst-bezahlte-essen-wert/>
+- Quoted on online restaurant reviews. Horizonte, research magazine of the Swiss National Science Foundation, 05.06.2018 [in German]. <https://www.horizonte-magazin.ch/2018/06/05/fuenf-sterne-ist-das-selbst-bezahlte-essen-wert/> English edition: «Everyone's a star», Horizons: <https://www.horizons-mag.ch/2018/06/05/everyones-a-star/>
 - Glassdoor ratings and company performance in the United Kingdom, commissioned study presented at Glassdoor's Best Places to Work, London, 29.03.2018. <https://www.glassdoor.co.uk/blog/people-drive-profit-glassdoor-ratings-linked-company-performance-united-kingdom/>
 - Coverage of our study with Efthymia Symitsi, Panagiotis Stamolampros and George Daskalakis in The Independent and by Moody's Analytics (Bureau van Dijk), 29.03.2018.
 - «Shoppers more likely to abandon purchase on mobile apps». The Daily Telegraph, p. 7, 08.01.2018 [print edition].
