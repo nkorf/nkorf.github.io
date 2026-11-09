@@ -1,0 +1,9 @@
+{{- /* Flatten one heading node and its children into H2/H3 entries. */ -}}
+{{- $out := slice -}}
+{{- if and .ID (or (eq .Level 2) (eq .Level 3)) -}}
+  {{- $out = $out | append (dict "id" .ID "title" (.Title | plainify) "level" .Level) -}}
+{{- end -}}
+{{- range .Headings -}}
+  {{- $out = $out | append (partial "nk/heading-walk.html" .) -}}
+{{- end -}}
+{{- return $out -}}

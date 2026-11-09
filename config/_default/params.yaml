@@ -9,7 +9,7 @@ hugoblox:
     social: {}
   theme:
     mode: system
-    pack: contrast
+    pack: nk-navy
     colors:
       primary: ''
       secondary: ''
@@ -26,7 +26,11 @@ hugoblox:
         background: ''
         foreground: ''
   typography:
-    pack: modern
+    pack: academic
+    families:
+      heading: Source Serif 4
+      body: Source Sans 3
+      nav: Source Sans 3
   layout:
     radius: sm
     spacing: spacious
@@ -143,3 +147,25 @@ hugoblox:
   pro:
     hide_attribution: false
     affiliate_code: ''
+# Sidebar of inner pages and the publications list (layouts/_partials/nk/sidebar.html).
+# sidebar: "local" lists the headings of the current page, "tree" the `side` menu.
+# side: "left" or "right". A group is shown on the pages it lists.
+nk:
+  groups:
+    - title: Research output
+      items:
+        - {name: Publications, url: /publications/}
+        - {name: Clinical trials, url: /clinical-trials/}
+        - {name: Policy impact, url: /policy-citations/}
+        - {name: Full list on GitHub, url: "https://github.com/nkorf/nkorf/blob/main/publications.md"}
+        - {name: CV (PDF), url: /uploads/korfiatis_cv.pdf}
+    - title: Teaching and supervision
+      items:
+        - {name: Teaching, url: /teaching/}
+        - {name: Supervision, url: /supervision/}
+    - title: News and media
+      items:
+        - {name: News, url: /news/}
+        - {name: Press, url: /press/}
+  sidebar: local
+  side: left

@@ -2,6 +2,7 @@
   Publications as one numbered list, grouped into the sections of
   github.com/nkorf/nkorf/publications.md and numbered alike. pub_section,
   pub_number and pub_order are written by scripts/sync_profile.py.
+  The sidebar lists the sections with counts and holds a client-side filter.
 */}}
 {{ define "main" }}
 
@@ -10,43 +11,54 @@
 {{ range $pages }}{{ $sections = $sections | append .Params.pub_section }}{{ end }}
 {{ $sections = uniq $sections }}
 
-<div class="flex flex-col items-center">
-  <div class="container max-w-3xl w-full px-4">
+{{ $items := slice }}
+{{ range $sections }}
+  {{ $items = $items | append (dict "id" (anchorize .) "title" . "level" 2 "count" (len (where $pages "Params.pub_section" .))) }}
+{{ end }}
 
-    <article class="prose prose-slate lg:prose-xl dark:prose-invert max-w-none mb-10">
-      <h1 class="lg:text-6xl">{{ .Title }}</h1>
-      {{ .Content }}
-    </article>
+{{ $extra := `
+<div class="nk-filter">
+  <p class="nk-side-label"><label for="nk-pub-filter">Filter</label></p>
+  <input type="search" id="nk-pub-filter" class="nk-input" placeholder="Author, title, journal, year" autocomplete="off">
+  <label class="nk-check"><input type="checkbox" id="nk-pub-cabs"> CABS-ranked journals only</label>
+  <p class="nk-filter-status" id="nk-pub-status" aria-live="polite"></p>
+</div>` }}
 
-    <nav aria-label="Publication sections" class="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-      {{ range $sections }}
-      <a href="#{{ anchorize . }}" class="underline">{{ . }} ({{ len (where $pages "Params.pub_section" .) }})</a>
-      {{ end }}
-    </nav>
+<div class="nk-shell{{ if eq site.Params.nk.side "right" }} nk-right{{ end }}">
+  {{ partial "nk/sidebar.html" (dict "page" . "items" $items "label" "Sections" "extra" ($extra | safeHTML)) }}
+
+  <main class="nk-main nk-publications">
+    <header class="nk-page-head">
+      <h1>{{ .Title }}</h1>
+      <div class="nk-lede">{{ .Content }}</div>
+    </header>
 
     {{ range $sections }}
     {{ $section := . }}
-    <section id="{{ anchorize $section }}" class="mt-12 scroll-mt-24">
-      <h2 class="text-2xl font-bold mb-6">{{ $section }}</h2>
-      <ol class="list-none p-0 m-0 flex flex-col space-y-3">
-        {{ range where $pages "Params.pub_section" $section }}
+    {{ $in := where $pages "Params.pub_section" $section }}
+    <section id="{{ anchorize $section }}" class="nk-pub-section">
+      <h2>{{ $section }} <span class="nk-count">{{ len $in }}</span></h2>
+      <ol class="nk-pubs">
+        {{ range $in }}
         {{ $item := . }}
         {{ $year := $item.Date.Format "2006" }}
         {{ $pub := partial "functions/resolve_publication.html" $item }}
-        <li class="pub-list-item view-citation flex gap-3" style="margin-bottom: 1rem">
-          <span class="font-semibold tabular-nums shrink-0 w-12 text-right">[{{ $item.Params.pub_number }}]</span>
-          <div class="min-w-0">
-            <span class="article-metadata li-cite-author">
-              {{ partial "page_metadata_authors" $item }}
-            </span>
-            ({{- $year -}}).
-            <a href="{{ $item.RelPermalink }}" class="underline">{{ $item.Title }}</a>.
-            {{ with $pub.display_short }}{{- . | markdownify -}}.{{ end }}
-            {{ with $item.Params.cabs }}<strong>(CABS {{ . }})</strong>{{ end }}
-            {{ if partial "functions/has_attachments" $item }}
-            <div class="flex flex-wrap space-x-3">
-              {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+        {{ $names := slice }}
+        {{ range $item.Params.authors }}{{ $names = $names | append (cond (eq . "me") "Nikolaos Korfiatis" .) }}{{ end }}
+        {{ $venue := "" }}{{ with $item.Params.publication }}{{ if reflect.IsMap . }}{{ $venue = .name | default "" }}{{ else }}{{ $venue = . }}{{ end }}{{ end }}
+        {{ $text := lower (printf "%s %s %s %s" (delimit $names " ") $item.Title $venue $year) }}
+        <li class="nk-pub" data-cabs="{{ $item.Params.cabs }}" data-text="{{ $text }}">
+          <span class="nk-pub-num">[{{ $item.Params.pub_number }}]</span>
+          <div class="nk-pub-body">
+            <a class="nk-pub-title" href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+            <div class="nk-pub-meta">
+              <span class="nk-pub-authors">{{ partial "page_metadata_authors" $item }}</span>
+              ({{- $year -}}).
+              {{ with $pub.display_short }}{{- . | markdownify -}}.{{ end }}
+              {{ with $item.Params.cabs }}<span class="nk-cabs">CABS {{ . }}</span>{{ end }}
             </div>
+            {{ if partial "functions/has_attachments" $item }}
+            <div class="nk-pub-links">{{ partial "page_links" (dict "page" $item "is_list" 1) }}</div>
             {{ end }}
           </div>
         </li>
@@ -54,8 +66,7 @@
       </ol>
     </section>
     {{ end }}
-
-  </div>
+  </main>
 </div>
-
+<script src="{{ "js/nk.js" | relURL }}" defer></script>
 {{ end }}

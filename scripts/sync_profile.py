@@ -113,6 +113,24 @@ def author_names(raw: str) -> list:
     return names
 
 
+def impact_items(key: str, raw: str) -> list:
+    """policycitation 'Title|Organisation|Year' and patentcitation
+    'Title|Assignee|Number|Year', several joined by ';;', as markdown items."""
+    items = []
+    for part in raw.split(";;"):
+        fields = [f.strip() for f in part.split("|")]
+        if key == "policycitation" and len(fields) >= 3:
+            title, org, year = fields[:3]
+            items.append(f"«{title}», {org}, {year}.")
+        elif key == "patentcitation" and len(fields) >= 4:
+            title, assignee, number, year = fields[:4]
+            items.append(f"«{title}», {assignee}, "
+                         f"[{number}](https://patents.google.com/patent/{number}), {year}.")
+        elif part.strip():
+            items.append(part.strip())
+    return items
+
+
 def cite_bib(entry: dict) -> str:
     fields = [(k, entry[k]) for k in CITE_FIELDS if entry.get(k)]
     body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields)
@@ -176,10 +194,11 @@ def publication_page(entry: dict, numbering: dict) -> tuple:
         front["summary"] = note
 
     body = []
-    for key, label in (("policycitation", "Policy impact"),
-                       ("patentcitation", "Patent citation")):
+    for key, label in (("policycitation", "Cited in policy documents"),
+                       ("patentcitation", "Cited as prior art in patents")):
         if entry.get(key):
-            body.append(f"**{label}:** {strip_braces(entry[key])}")
+            items = impact_items(key, strip_braces(entry[key]))
+            body.append(f"**{label}**\n\n" + "\n".join(f"- {i}" for i in items))
     text = "---\n" + yaml.safe_dump(front, sort_keys=False, allow_unicode=True,
                                     width=1000) + "---\n"
     if body:

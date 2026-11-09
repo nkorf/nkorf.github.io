@@ -1,0 +1,37 @@
+hugoblox:
+  meta:
+    format: "hugoblox-theme@1"
+    name: "NK Navy"
+    vendor: "nkorf"
+    version: "1.0.0"
+    license: "MIT"
+    description: "Ionian University navy header, white page"
+  type: "dual"
+  light:
+    colors:
+      primary: "#143259"
+      secondary: "#3d5f8f"
+      neutral: "#1f2328"
+    surfaces:
+      background: "#ffffff"
+      foreground: "#1f2328"
+      header:
+        background: "#143259"
+        foreground: "#ffffff"
+      footer:
+        background: "#f4f5f7"
+        foreground: "#3b4450"
+  dark:
+    colors:
+      primary: "#7ea8e0"
+      secondary: "#a9c1e8"
+      neutral: "#e6e8eb"
+    surfaces:
+      background: "#10161f"
+      foreground: "#e6e8eb"
+      header:
+        background: "#0c1a30"
+        foreground: "#e6e8eb"
+      footer:
+        background: "#0b1017"
+        foreground: "#a3acb6"

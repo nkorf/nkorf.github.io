@@ -1,0 +1,6 @@
+{{- /* H2 and H3 headings of a page, in document order. */ -}}
+{{- $out := slice -}}
+{{- range .Fragments.Headings -}}
+  {{- $out = $out | append (partial "nk/heading-walk.html" .) -}}
+{{- end -}}
+{{- return $out -}}

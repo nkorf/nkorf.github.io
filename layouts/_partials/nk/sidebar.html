@@ -1,0 +1,56 @@
+{{- /*
+  Sidebar for inner pages. site.Params.nk.sidebar:
+    "local" lists the sections of the current page,
+    "tree"  lists the site menu `side` with the current page expanded.
+  Args: page, items (see nk/item-list.html), label, extra (HTML appended).
+*/ -}}
+{{- $p := .page -}}
+{{- $mode := site.Params.nk.sidebar | default "local" -}}
+<aside class="nk-sidebar" data-pagefind-ignore="all">
+  <details class="nk-disclosure" open>
+    <summary>{{ if eq $mode "tree" }}Menu{{ else }}{{ .label }}{{ end }}</summary>
+    <div class="nk-sidebar-inner">
+      {{- if eq $mode "tree" }}
+      <nav aria-label="Site">
+        <ul class="nk-tree">
+          {{- range site.Menus.side }}
+          {{- $url := .URL | relURL -}}
+          {{- $current := eq $url $p.RelPermalink }}
+          <li{{ if $current }} class="is-current"{{ end }}>
+            <a href="{{ $url }}"{{ if $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
+            {{- if $current }}{{ partial "nk/item-list.html" $.items }}{{ end }}
+          </li>
+          {{- end }}
+        </ul>
+      </nav>
+      {{- else }}
+      {{- with .items }}
+      <nav aria-label="{{ $.label }}">
+        <p class="nk-side-label">{{ $.label }}</p>
+        {{ partial "nk/item-list.html" . }}
+      </nav>
+      {{- end }}
+      {{- end }}
+
+      {{ with .extra }}{{ . }}{{ end }}
+
+      {{- if ne $mode "tree" }}
+      {{- range site.Params.nk.groups }}
+        {{- $show := false -}}
+        {{- range .items }}{{ if eq (.url | relURL) $p.RelPermalink }}{{ $show = true }}{{ end }}{{ end -}}
+        {{- if $show }}
+      <nav aria-label="{{ .title }}">
+        <p class="nk-side-label">{{ .title }}</p>
+        <ul class="nk-side-list">
+          {{- range .items }}
+          {{- $u := .url | relURL }}
+          <li><a href="{{ $u }}"{{ if eq $u $p.RelPermalink }} aria-current="page"{{ end }}>{{ .name }}</a></li>
+          {{- end }}
+        </ul>
+      </nav>
+        {{- end }}
+      {{- end }}
+      {{- end }}
+    </div>
+  </details>
+</aside>

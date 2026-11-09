@@ -1,0 +1,16 @@
+{{- /* Inner pages (type: page) with a sidebar built from the page's own headings. */ -}}
+{{ define "main" }}
+{{ $items := partial "nk/headings.html" . }}
+<div class="nk-shell{{ if eq site.Params.nk.side "right" }} nk-right{{ end }}">
+  {{ partial "nk/sidebar.html" (dict "page" . "items" $items "label" "On this page") }}
+  <main class="nk-main nk-page-{{ path.Base .RelPermalink }}">
+    <header class="nk-page-head">
+      <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+    </header>
+    <div class="nk-prose prose prose-slate dark:prose-invert max-w-none" data-pagefind-body>
+      {{ .Content }}
+    </div>
+  </main>
+</div>
+<script src="{{ "js/nk.js" | relURL }}" defer></script>
+{{ end }}
