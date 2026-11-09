@@ -309,3 +309,19 @@ section.hbb-section:has(.pub-list-item) > div:nth-of-type(n+3) { grid-column: 2;
 @media (max-width: 1023.98px) {
   section.hbb-section:has(.pub-list-item) > div:nth-of-type(n+3) { grid-column: 1; }
 }
+
+/* Navbar on the navy header: the kit colours hovered links and icons with the
+   primary colour, which is the header colour itself. Keep them light and mark
+   the current page with a bar. */
+.page-header .nav-link:hover,
+.page-header .nav-link:focus-visible {
+  color: var(--hb-color-header-fg);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+.page-header .nav-link.active {
+  color: var(--hb-color-header-fg);
+  box-shadow: inset 0 -3px 0 #7ea8e0;
+}
+.page-header .hover\:text-primary-500:hover { color: var(--hb-color-header-fg); opacity: .75; }
